@@ -28,6 +28,9 @@
   .main-heading {
     text-align: center;
     margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     p {
       &:nth-child(1) {
         font-size: 2rem;
@@ -38,6 +41,9 @@
           color: var(--v-d-blue);
           font-weight: 700;
         }
+      }
+      &:last-child {
+        font-size: 0.9rem;
       }
     }
   }

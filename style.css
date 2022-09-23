@@ -29,6 +29,9 @@
 .container .main-heading {
   text-align: center;
   margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 .container .main-heading p:nth-child(1) {
   font-size: 2rem;
@@ -39,4 +42,7 @@
   font-size: 2rem;
   color: var(--v-d-blue);
   font-weight: 700;
+}
+.container .main-heading p:last-child {
+  font-size: 0.9rem;
 }/*# sourceMappingURL=style.css.map */
