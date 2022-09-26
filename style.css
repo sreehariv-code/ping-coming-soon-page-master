@@ -34,15 +34,73 @@
   gap: 0.5rem;
 }
 .container .main-heading p:nth-child(1) {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 200;
   color: var(--gray);
 }
 .container .main-heading p:nth-child(1) span {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--v-d-blue);
   font-weight: 700;
 }
 .container .main-heading p:last-child {
   font-size: 0.9rem;
+}
+.container .form-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .form-container form {
+  margin-top: 1.7rem;
+  display: flex;
+  width: 50%;
+  gap: 1rem;
+  justify-content: center;
+}
+.container .form-container form .input-container input {
+  border: 2px solid var(--p-blue);
+  border-radius: 40px;
+  outline: none;
+  padding: 1rem;
+  padding-left: 1.7rem;
+  min-width: 500px;
+}
+.container .form-container form .input-container input.error {
+  border-color: var(--l-red);
+}
+.container .form-container form .input-container .alert {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  color: var(--l-red);
+  display: none;
+}
+.container .form-container form .input-container .alert.error {
+  display: block;
+}
+.container .form-container form .input-container ::-moz-placeholder {
+  color: var(--gray);
+}
+.container .form-container form .input-container :-ms-input-placeholder {
+  color: var(--gray);
+}
+.container .form-container form .input-container ::placeholder {
+  color: var(--gray);
+}
+.container .form-container form .submit-btn {
+  max-height: 24px;
+  padding: 1.7rem 3rem;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  background: var(--blue);
+  color: white;
+  font-weight: 600;
+}
+.container .form-container form .submit-btn:hover {
+  cursor: pointer;
+  background: hsl(223deg, 68%, 66%);
 }/*# sourceMappingURL=style.css.map */
