@@ -55,7 +55,7 @@
 .container .form-container form {
   margin-top: 1.7rem;
   display: flex;
-  width: 50%;
+  width: 100%;
   gap: 1rem;
   justify-content: center;
 }
@@ -65,7 +65,7 @@
   outline: none;
   padding: 1rem;
   padding-left: 1.7rem;
-  min-width: 500px;
+  min-width: 600px;
 }
 .container .form-container form .input-container input.error {
   border-color: var(--l-red);
@@ -103,4 +103,47 @@
 .container .form-container form .submit-btn:hover {
   cursor: pointer;
   background: hsl(223deg, 68%, 66%);
+  transition: all 0.3s;
+}
+.container .illustration {
+  margin-top: 2rem;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+.container .illustration img {
+  width: clamp(365px, 50%, 1000px);
+}
+.container .social-icon-section {
+  padding-bottom: 4rem;
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .social-icon-section .icon-set {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.container .social-icon-section .icon-set a {
+  text-decoration: none;
+  color: var(--blue);
+  border: 0.1px solid var(--gray);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s;
+}
+.container .social-icon-section .icon-set a:hover {
+  background: var(--blue);
+  color: var(--p-blue);
+  transition: all 0.3s;
+}
+.container .social-icon-section .copy-right-desc {
+  color: var(--gray);
+  font-size: 0.7rem;
 }/*# sourceMappingURL=style.css.map */
