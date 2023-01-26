@@ -55,7 +55,7 @@
 .container .form-container form {
   margin-top: 1.7rem;
   display: flex;
-  width: 100%;
+  width: 80%;
   gap: 1rem;
   justify-content: center;
 }
@@ -65,7 +65,7 @@
   outline: none;
   padding: 1rem;
   padding-left: 1.7rem;
-  min-width: 600px;
+  width: 100%;
 }
 .container .form-container form .input-container input.error {
   border-color: var(--l-red);
@@ -161,5 +161,10 @@
   .input-container {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 650px) {
+  .container .form-container form .input-container input {
+    min-width: 600px;
   }
 }/*# sourceMappingURL=style.css.map */
