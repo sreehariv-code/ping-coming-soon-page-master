@@ -74,10 +74,12 @@
   padding-left: 1rem;
   padding-top: 1rem;
   color: var(--l-red);
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 .container .form-container form .input-container .alert.error {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 .container .form-container form .input-container ::-moz-placeholder {
   color: var(--gray);
@@ -146,4 +148,18 @@
 .container .social-icon-section .copy-right-desc {
   color: var(--gray);
   font-size: 0.7rem;
+}
+
+@media screen and (max-width: 870px) {
+  .container .form-container #form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .illustration img {
+    width: clamp(365px, 80%, 1000px);
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

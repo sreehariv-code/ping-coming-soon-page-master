@@ -1,13 +1,15 @@
 let form = document.getElementById("form");
 let email = document.getElementById("email");
 let alertSign = document.getElementsByClassName("alert");
-console.log(alertSign);
+// console.log(alertSign);
 
 form.onsubmit = (e) => {
   e.preventDefault();
-  console.log(validateEmail(email.value));
-  //   console.log(email);
-  // console.log()
+  if (!validateEmail(email.value)) {
+    alertSign[0].classList.add("error");
+  } else {
+    alertSign[0].classList.remove("error");
+  }
 };
 
 function validateEmail(input) {
